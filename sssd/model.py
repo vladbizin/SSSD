@@ -3,16 +3,16 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-from SSSD_module.utils.util import (
+from sssd.utils.util import (
     find_max_epoch, print_size,
     training_loss, sampling,
     calc_diffusion_hyperparams
     )
 
-from SSSD_module.utils.util import TS_Dataset
+from sssd.utils.util import TS_Dataset
 from torch.utils.data import DataLoader
 
-from SSSD_module.imputers import SSSDS4Imputer
+from sssd.imputers import SSSDS4Imputer
 
 from tqdm import tqdm
 

@@ -1,4 +1,4 @@
-from SSSD_module.model import SSSDS4
+from sssd.model import SSSDS4
 import numpy as np
 import pickle
 import os
@@ -8,7 +8,11 @@ def mar(X, missing_rate):
     num_observed = obs_mask.sum()
     num_masked = round(num_observed * missing_rate)
     
-    masked = np.random.choice(np.arange(obs_mask.size).reshape(obs_mask.shape)[obs_mask], num_masked, replace=False)
+    masked = np.random.choice(
+        np.arange(obs_mask.size).reshape(obs_mask.shape)[obs_mask],
+        num_masked,
+        replace=False
+    )
 
     missing_mask = obs_mask.reshape(-1)
     missing_mask[:] = False

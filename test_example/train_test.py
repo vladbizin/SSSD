@@ -1,4 +1,4 @@
-from SSSD_module.model import SSSDS4
+from sssd.model import SSSDS4
 import numpy as np
 import os
 
@@ -10,9 +10,9 @@ dirname = os.path.join(
     'test_data/datasets/ETTm'
 )
 
-train = np.load(dirname + '/train.py')
-val = np.load(dirname + '/val.py')
-val_ori = np.load(dirname + '/val.py')
+train = np.load(dirname + '/train.npy')
+val = np.load(dirname + '/val.npy')
+val_ori = np.load(dirname + '/val.npy')
 
 
 train_config={

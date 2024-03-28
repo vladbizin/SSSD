@@ -17,7 +17,7 @@ setup(
   long_description_content_type='text/markdown',
   packages=find_packages(exclude=["tests"]),
   include_package_data=True,
-  url='',
+  url='https://github.com/vladbizin/SSSD',
   install_requires=[
     'einops==0.7.0',
     'matplotlib==3.8.2',

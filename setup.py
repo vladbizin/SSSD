@@ -20,6 +20,7 @@ setup(
   url='https://github.com/vladbizin/SSSD',
   install_requires=[
     'einops==0.7.0',
+    'gluonts==0.14.3',
     'matplotlib==3.8.2',
     'numpy==1.26.4',
     'opt_einsum==3.3.0',
@@ -27,6 +28,7 @@ setup(
     'pytorch_lightning==2.1.3',
     'scikit_learn==1.4.1.post1',
     'scipy==1.12.0',
+    'setuptools==65.5.0'
     'torch==2.1.1+cu118',
     'tqdm==4.66.1',
     'tsdb==0.3.1',
